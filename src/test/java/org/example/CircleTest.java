@@ -114,4 +114,12 @@ class CircleTest {
         assertTrue(result.contains("5,00") || result.contains("5.00"));
         assertTrue(result.contains("78,54") || result.contains("78.54"));
     }
+
+    @Test
+    void toString_largeRadius_doesNotBreakLayout() {
+        String result = new Circle(10_000.0).toString();
+        for (String line : result.split(System.lineSeparator())) {
+            assertTrue(line.length() <= 35, "Строка шире рамки: " + line);
+        }
+    }
 }

@@ -9,7 +9,7 @@ public class InputHelper {
         this.scanner = scanner;
     }
 
-    public double readPositiveDouble(String prompt) {
+    public double readPositiveDouble(String prompt, double max) {
         while (true) {
             System.out.print(prompt);
             String input = scanner.nextLine().trim();
@@ -29,8 +29,8 @@ public class InputHelper {
                     System.out.println("Ошибка: значение должно быть больше нуля. Попробуйте снова.");
                     continue;
                 }
-                if (value > Circle.MAX_RADIUS) {
-                    System.out.println("Ошибка: значение не может превышать " + (int) Circle.MAX_RADIUS + ". Попробуйте снова.");
+                if (value > max) {
+                    System.out.println("Ошибка: значение не может превышать " + (long) max + ". Попробуйте снова.");
                     continue;
                 }
                 return value;
