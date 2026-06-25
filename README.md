@@ -1,5 +1,11 @@
 # Circle Calculator
 
+![Java](https://img.shields.io/badge/Java-17-orange?logo=openjdk&logoColor=white)
+![Maven](https://img.shields.io/badge/Maven-3.6+-blue?logo=apachemaven&logoColor=white)
+![JUnit](https://img.shields.io/badge/JUnit-5-green?logo=junit5&logoColor=white)
+![Tests](https://img.shields.io/badge/Tests-16%20passed-brightgreen?logo=checkmarx&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-yellow)
+
 Учебный проект на Java — реализация класса `Circle` с валидацией, тестами и консольным интерфейсом.
 
 ---
