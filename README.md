@@ -1,10 +1,8 @@
 # Circle Calculator
 
-![Java](https://img.shields.io/badge/Java-17-orange?logo=openjdk&logoColor=white)
-![Maven](https://img.shields.io/badge/Maven-3.6+-blue?logo=apachemaven&logoColor=white)
-![JUnit](https://img.shields.io/badge/JUnit-5-green?logo=junit5&logoColor=white)
-![Tests](https://img.shields.io/badge/Tests-16%20passed-brightgreen?logo=checkmarx&logoColor=white)
-![License](https://img.shields.io/badge/License-MIT-yellow)
+![Java](https://img.shields.io/badge/Java-17-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
+![Maven](https://img.shields.io/badge/Maven-3.6+-C71A36?style=for-the-badge&logo=apachemaven&logoColor=white)
+![JUnit](https://img.shields.io/badge/JUnit-5-25A162?style=for-the-badge&logo=junit5&logoColor=white)
 
 Учебный проект на Java — реализация класса `Circle` с валидацией, тестами и консольным интерфейсом.
 
@@ -36,51 +34,3 @@
 Вычислить ещё один круг? (да/нет): нет
 Программа завершена.
 ```
-
----
-
-## Структура проекта
-
-```
-src/
-├── main/java/org/example/
-│   ├── Circle.java        # Модель круга с валидацией
-│   ├── InputHelper.java   # Чтение и проверка пользовательского ввода
-│   └── Main.java          # Точка входа
-└── test/java/org/example/
-    └── CircleTest.java    # JUnit 5 тесты (16 тестов)
-```
-
----
-
-## Валидация
-
-| Ситуация | Сообщение |
-|---|---|
-| Пустая строка | `поле не может быть пустым` |
-| Не число (`abc`) | `введите числовое значение` |
-| `Infinity` / `NaN` | `недопустимое числовое значение` |
-| Число ≤ 0 | `значение должно быть больше нуля` |
-| Число > 1 000 000 | `значение не может превышать 1000000` |
-
----
-
-## Запуск
-
-**Требования:** Java 17+, Maven 3.6+
-
-```bash
-# Запуск программы
-mvn compile exec:java -Dexec.mainClass="org.example.Main"
-
-# Запуск тестов
-mvn test
-```
-
----
-
-## Технологии
-
-- Java 17
-- Maven
-- JUnit 5
